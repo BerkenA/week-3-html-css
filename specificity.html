@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Specificity</title>
+    <style>
+
+        /* The id tag is the second highest tag and will overwrite the lower selections, like class, and tag selection. ID = nr 2, Class = nr 3, Tag selection = nr 4 */
+        #header-id {
+            color: blue;
+        }
+        
+        .header {
+            color: green;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        /* This wont overwrite ID. Because you chose tag selection. It will if you use !important. its the highest selection. BUT DONT USE IT */
+        h2.header {
+            color: yellow;
+        }
+
+        h2.header span {
+            color: darkblue;
+        }
+        #header-id span {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2 id="header-id" class="header">
+        <span>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam error expedita numquam saepe odio ex sunt quaerat perspiciatis dicta! Consectetur?
+        </span>
+    </h2>
+
+    
+
+    <p id="paragraph-id" class="paragraph">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus ducimus qui doloremque neque accusamus nisi, ipsum commodi similique eos.
+    </p>
+    
+</body>
+</html>
