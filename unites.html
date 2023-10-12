@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::: Unites :::</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .some-parent {
+            width: 200px;
+            border: 1px solid black;
+            height: 500px;
+        }
+
+        .item {
+            background-color: green;
+        }
+
+        .item-percent {
+            width: 50%;
+            height:50%;
+        }
+
+        .item-view-witdth {
+            width: 50vw;
+            height: 50vh;
+        }
+
+        /* r(root)em takes the root font-size that usually is in the body or somewhere else. Here it is *  makes the text more readable for different screens than pixels */
+        .p-rem {
+            font-size: 2rem;
+        }
+
+        .parent {
+            font-size: 20px;
+        }
+
+        /* em mulitplies your font size from a parent */
+        .p-em {
+            font-size: 2em;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="some-parent">
+        <div class="item item-percent">percent</div>
+        <div class="item item-view-witdth">item view width</div>
+    </div> -->
+
+    <div class="parent">
+        <div class="item p-rem">percent</div>
+        <div class="item p-em">item view width</div>
+    </div>
+
+    </div>
+
+</body>
+</html>

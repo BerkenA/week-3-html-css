@@ -4,30 +4,36 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+body {
+    margin: 0px;
+}
+
 header {
     background-color: black;
     position: sticky;
     top:0%;
     color: white;
-    border-radius: 8px;
-    padding: 8px 16px;
 }
 
 nav {
     display: none;
     background-color: black;
     color: white;
-    border-radius: 8px;
-}
-
-nav li {
-    padding: 8px 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding-left: 16px;
 }
 
 nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
+nav li {
+    padding: 16px;
+}
 
 nav a {
     color: white;
@@ -60,6 +66,12 @@ label {
     }
     nav {
         display: block;
+        position: static;
+        width: initial;
+        top: initial;
+        left: 0;
+        padding-left: 8px;
+        height: auto;
     }
     nav li a:hover {
         text-decoration: underline;
